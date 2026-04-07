@@ -24,29 +24,29 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.section{
-        case 0:
+        case 0: // Team Member Section
             switch(indexPath.row) {
-            case 0:
-                // Dakota's section
-                selectedMember = group10[0]
-                self.performSegue(withIdentifier: "memberSegue", sender: self)
-                break
-            case 1:
-                // Greyson's section
-                selectedMember = group10[1]
-                self.performSegue(withIdentifier: "memberSegue", sender: self)
-                break
-            case 2:
-                // Alex's section
-                selectedMember = group10[2]
-                self.performSegue(withIdentifier: "memberSegue", sender: self)
-                break
-            default:
-                break
+                case 0:
+                    // Dakota's section
+                    selectedMember = group10[0]
+                    self.performSegue(withIdentifier: "memberSegue", sender: self)
+                    break
+                case 1:
+                    // Greyson's section
+                    selectedMember = group10[1]
+                    self.performSegue(withIdentifier: "memberSegue", sender: self)
+                    break
+                case 2:
+                    // Alex's section
+                    selectedMember = group10[2]
+                    self.performSegue(withIdentifier: "memberSegue", sender: self)
+                    break
+                default:
+                    break
             }
-        case 1:
+        case 1: // Project Details Section
             print()
-        case 2:
+        case 2: // UI/UX Design Section
             print()
         default:
             break
