@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Group 10 Proposal 2-->
+        <!--Group 10 Project Proposal 2-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Group10Proposal2" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,17 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Iy7-4e-cFx">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="40" estimatedSectionHeaderHeight="-1" sectionFooterHeight="30" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Iy7-4e-cFx">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="aps-gK-JWC">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <rect key="frame" x="20" y="38" width="353" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aps-gK-JWC" id="dkd-kT-QGo">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="353" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemMintColor"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -44,14 +48,15 @@
                             <constraint firstAttribute="bottom" secondItem="Iy7-4e-cFx" secondAttribute="bottom" id="gvT-AN-5dV"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Group 10 Proposal 2" id="SGo-X5-Zub"/>
+                    <navigationItem key="navigationItem" title="Group 10 Project Proposal 2" id="SGo-X5-Zub"/>
                     <connections>
                         <segue destination="1Xp-M6-b2Q" kind="show" identifier="memberSegue" id="TVZ-84-NqW"/>
+                        <segue destination="lpw-u1-5jA" kind="show" identifier="detailSegue" id="1GC-9Q-QOS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-834" y="-592"/>
+            <point key="canvasLocation" x="-816" y="-592"/>
         </scene>
         <!--Member-->
         <scene sceneID="NqA-TC-QpC">
@@ -101,7 +106,7 @@
                             <constraint firstItem="PYZ-10-X8J" firstAttribute="leading" secondItem="uOa-J8-B2R" secondAttribute="leading" constant="16" id="yJw-Wn-n1e"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="qML-WJ-ZYx"/>
+                    <navigationItem key="navigationItem" title="Member" id="qML-WJ-ZYx"/>
                     <connections>
                         <outlet property="memberImage" destination="PYZ-10-X8J" id="pba-RM-Fgb"/>
                         <outlet property="memberName" destination="t1P-G4-5et" id="c2F-5t-L3S"/>
@@ -120,6 +125,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Nu5-vl-7NU">
                         <rect key="frame" x="0.0" y="118" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -130,10 +136,10 @@
             </objects>
             <point key="canvasLocation" x="-1553" y="-592"/>
         </scene>
-        <!--View Controller-->
+        <!--Image View Controller-->
         <scene sceneID="gXD-JO-iOD">
             <objects>
-                <viewController id="Bs7-C9-VPE" sceneMemberID="viewController">
+                <viewController id="Bs7-C9-VPE" customClass="ImageViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aBF-B2-9Hx">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,16 +151,56 @@
             </objects>
             <point key="canvasLocation" x="89" y="-114"/>
         </scene>
-        <!--View Controller-->
+        <!--Connect 4 Game-->
         <scene sceneID="b9C-80-FBW">
             <objects>
-                <viewController id="lpw-u1-5jA" sceneMemberID="viewController">
+                <viewController id="lpw-u1-5jA" customClass="DetailsViewController" customModule="Group10Proposal2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hel-Re-OBy">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Connect 4" translatesAutoresizingMaskIntoConstraints="NO" id="Qyf-wu-J8k">
+                                <rect key="frame" x="16" y="214" width="361" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="yXk-Sm-gya"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DetailTopic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31R-n0-e6a">
+                                <rect key="frame" x="16" y="434" width="361" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Detail Notes:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fne-v6-w7K">
+                                <rect key="frame" x="16" y="490" width="361" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="USl-Mf-FVk"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ZVP-Fr-a5e"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fne-v6-w7K" firstAttribute="leading" secondItem="ZVP-Fr-a5e" secondAttribute="leading" constant="16" id="5h9-CS-tM4"/>
+                            <constraint firstItem="ZVP-Fr-a5e" firstAttribute="trailing" secondItem="fne-v6-w7K" secondAttribute="trailing" constant="16" id="Smy-HR-3db"/>
+                            <constraint firstItem="31R-n0-e6a" firstAttribute="top" secondItem="Qyf-wu-J8k" secondAttribute="bottom" constant="20" id="dOz-7q-vVQ"/>
+                            <constraint firstItem="ZVP-Fr-a5e" firstAttribute="trailing" secondItem="31R-n0-e6a" secondAttribute="trailing" constant="16" id="fGx-xB-MfI"/>
+                            <constraint firstItem="ZVP-Fr-a5e" firstAttribute="trailing" secondItem="Qyf-wu-J8k" secondAttribute="trailing" constant="16" id="kAV-ej-fJr"/>
+                            <constraint firstItem="Qyf-wu-J8k" firstAttribute="top" secondItem="ZVP-Fr-a5e" secondAttribute="top" id="mJX-AP-iTr"/>
+                            <constraint firstItem="31R-n0-e6a" firstAttribute="leading" secondItem="ZVP-Fr-a5e" secondAttribute="leading" constant="16" id="qAi-YM-NkK"/>
+                            <constraint firstItem="fne-v6-w7K" firstAttribute="top" secondItem="31R-n0-e6a" secondAttribute="bottom" constant="20" id="tRV-Td-iLc"/>
+                            <constraint firstItem="Qyf-wu-J8k" firstAttribute="leading" secondItem="ZVP-Fr-a5e" secondAttribute="leading" constant="16" id="xjn-qa-mXP"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Connect 4 Game" id="Fm2-jb-JAd"/>
+                    <connections>
+                        <outlet property="detailText" destination="fne-v6-w7K" id="6MO-WR-Rsz"/>
+                        <outlet property="detailTopic" destination="31R-n0-e6a" id="e04-Gq-7x8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hss-dw-iII" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -162,11 +208,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Connect 4" width="100" height="100"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

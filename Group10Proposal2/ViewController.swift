@@ -10,19 +10,21 @@ import UIKit
 class ViewController: UIViewController {
 
     let group10 = ["Dakota", "Greyson", "Alex"]
-    let projectTable = ["Game Modes", "Customization"]
+    let projectTable = ["Game Modes", "Customization", "Concepts to Use"]
     let imageTable = ["Launch Screen", "Main Screen"]
     
     var selectedMember = ""
+    var selectedTopic = ""
+    var selectedImage = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 }
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         switch indexPath.section{
         case 0: // Team Member Section
             switch(indexPath.row) {
@@ -45,9 +47,33 @@ extension ViewController: UITableViewDelegate {
                     break
             }
         case 1: // Project Details Section
-            print()
+            switch(indexPath.row) {
+            case 0:
+                // Game Modes Section
+                selectedTopic = projectTable[0]
+                self.performSegue(withIdentifier: "detailSegue", sender: self)
+                break
+            case 1:
+                // Customization Section
+                selectedTopic = projectTable[1]
+                self.performSegue(withIdentifier: "detailSegue", sender: self)
+                break
+            case 2:
+                // Concepts to Use Section
+                selectedTopic = projectTable[2]
+                self.performSegue(withIdentifier: "detailSegue", sender: self)
+                break
+            default:
+                break
+        }
         case 2: // UI/UX Design Section
-            print()
+            switch(indexPath.row) {
+            case 0:
+                print()
+            default:
+                break
+            }
+
         default:
             break
         }
@@ -126,6 +152,12 @@ extension ViewController: UITableViewDataSource{
                 return
             }
             destVC.memberNameVar = selectedMember
+        } else if(segue.identifier == "detailSegue") {
+            guard let destVC = segue.destination as? DetailsViewController else {
+                print("Couldn't get destination view controller")
+                return
+            }
+            destVC.detailTopicVar = selectedTopic
         }
     }
 }
