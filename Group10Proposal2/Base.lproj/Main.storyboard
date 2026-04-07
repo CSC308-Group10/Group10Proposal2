@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Group 10 Proposal 2-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Group10Proposal2" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,6 +19,20 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Iy7-4e-cFx">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="aps-gK-JWC">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aps-gK-JWC" id="dkd-kT-QGo">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="1uY-p1-6xF"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="qcA-U5-z6P"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -30,11 +44,26 @@
                             <constraint firstAttribute="bottom" secondItem="Iy7-4e-cFx" secondAttribute="bottom" id="gvT-AN-5dV"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="SGo-X5-Zub"/>
+                    <navigationItem key="navigationItem" title="Group 10 Proposal 2" id="SGo-X5-Zub"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1052.6717557251909" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="-767" y="-592"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NqA-TC-QpC">
+            <objects>
+                <viewController id="1Xp-M6-b2Q" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3QY-he-HhD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="uOa-J8-B2R"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JCf-pt-yoc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88" y="-1083"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Rpr-4V-V6j">
@@ -52,7 +81,37 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Arv-PN-oae" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="125.95419847328243" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="-1553" y="-592"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gXD-JO-iOD">
+            <objects>
+                <viewController id="Bs7-C9-VPE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aBF-B2-9Hx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="IsU-IK-b4B"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hdR-eY-BgP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89" y="-114"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="b9C-80-FBW">
+            <objects>
+                <viewController id="lpw-u1-5jA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hel-Re-OBy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ZVP-Fr-a5e"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hss-dw-iII" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1007" y="-593"/>
         </scene>
     </scenes>
     <resources>
