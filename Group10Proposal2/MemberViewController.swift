@@ -23,7 +23,7 @@ class MemberViewController: UIViewController {
         memberImage.layer.cornerRadius = 12
         switch(memberNameVar) {
         case "Dakota":
-            memberText.text = "Notes:\n- First point here\n- Second point here\n- Third point here"
+            memberText.text = "Notes:\n- Initialized the main concept of the group project\n- Created Timed game mode\n- Mapped out main concepts for customization and project design"
             break
         case "Greyson":
             memberText.text = "Notes:\n- Created main framework for application\n- Created AI game mode\n- Helped design UX/UI Views"
