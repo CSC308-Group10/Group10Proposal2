@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     let projectTable = ["Game Modes", "Customization"]
     let imageTable = ["Launch Screen", "Main Screen"]
     
+    var selectedMember = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -23,7 +25,25 @@ extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.section{
         case 0:
-            print()
+            switch(indexPath.row) {
+            case 0:
+                // Dakota's section
+                selectedMember = group10[0]
+                self.performSegue(withIdentifier: "memberSegue", sender: self)
+                break
+            case 1:
+                // Greyson's section
+                selectedMember = group10[1]
+                self.performSegue(withIdentifier: "memberSegue", sender: self)
+                break
+            case 2:
+                // Alex's section
+                selectedMember = group10[2]
+                self.performSegue(withIdentifier: "memberSegue", sender: self)
+                break
+            default:
+                break
+            }
         case 1:
             print()
         case 2:
@@ -96,6 +116,16 @@ extension ViewController: UITableViewDataSource{
             return "Images similar to end goal of the project"
         default:
             return nil
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "memberSegue") {
+            guard let destVC = segue.destination as? MemberViewController else {
+                print("Couldn't get destination view controller")
+                return
+            }
+            destVC.memberNameVar = selectedMember
         }
     }
 }
