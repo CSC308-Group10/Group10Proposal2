@@ -68,8 +68,14 @@ extension ViewController: UITableViewDelegate {
         }
         case 2: // UI/UX Design Section
             switch(indexPath.row) {
-            case 0:
-                print()
+            case 0: // Launch Screen
+                selectedImage = imageTable[0]
+                self.performSegue(withIdentifier: "uiSegue", sender: self)
+                break
+            case 1:
+                selectedImage = imageTable[1]
+                self.performSegue(withIdentifier: "uiSegue", sender: self)
+                break
             default:
                 break
             }
@@ -158,6 +164,12 @@ extension ViewController: UITableViewDataSource{
                 return
             }
             destVC.detailTopicVar = selectedTopic
+        } else if(segue.identifier == "uiSegue") {
+            guard let destVC = segue.destination as? ImageViewController else {
+                print("Couldn't get destination view controller")
+                return
+            }
+            destVC.imageName = selectedImage
         }
     }
 }

@@ -52,6 +52,7 @@
                     <connections>
                         <segue destination="1Xp-M6-b2Q" kind="show" identifier="memberSegue" id="TVZ-84-NqW"/>
                         <segue destination="lpw-u1-5jA" kind="show" identifier="detailSegue" id="1GC-9Q-QOS"/>
+                        <segue destination="uSu-eW-EMe" kind="show" identifier="uiSegue" id="nGi-ol-Vmz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -136,20 +137,37 @@
             </objects>
             <point key="canvasLocation" x="-1553" y="-592"/>
         </scene>
-        <!--Image View Controller-->
-        <scene sceneID="gXD-JO-iOD">
+        <!--UI Image-->
+        <scene sceneID="zY7-Dm-22W">
             <objects>
-                <viewController id="Bs7-C9-VPE" customClass="ImageViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="aBF-B2-9Hx">
+                <viewController title="UI Image" id="uSu-eW-EMe" customClass="ImageViewController" customModule="Group10Proposal2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tc9-4p-Qfi">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="IsU-IK-b4B"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vRP-a3-Qck">
+                                <rect key="frame" x="16" y="214" width="361" height="570"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="570" id="tFz-tP-mL8"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XO3-uc-wHX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XO3-uc-wHX" firstAttribute="trailing" secondItem="vRP-a3-Qck" secondAttribute="trailing" constant="16" id="Jrb-kk-88I"/>
+                            <constraint firstItem="vRP-a3-Qck" firstAttribute="top" secondItem="XO3-uc-wHX" secondAttribute="top" id="SMa-Rw-z8I"/>
+                            <constraint firstItem="vRP-a3-Qck" firstAttribute="leading" secondItem="XO3-uc-wHX" secondAttribute="leading" constant="16" id="kLu-Fe-iJl"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="oQF-ml-18d"/>
+                    <connections>
+                        <outlet property="imageView" destination="vRP-a3-Qck" id="a6S-sv-J2T"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hdR-eY-BgP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S1q-nO-iSr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="89" y="-114"/>
+            <point key="canvasLocation" x="116.79389312977099" y="-206.33802816901411"/>
         </scene>
         <!--Connect 4 Game-->
         <scene sceneID="b9C-80-FBW">
@@ -216,7 +234,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

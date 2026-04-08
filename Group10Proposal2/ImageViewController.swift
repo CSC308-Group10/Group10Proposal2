@@ -9,9 +9,13 @@ import UIKit
 
 class ImageViewController: UIViewController {
 
+    var imageName = ""
+    
+    @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        imageView.image = UIImage(named: imageName) ?? UIImage(named: "Default")
+        imageView.layer.cornerRadius = 12
         // Do any additional setup after loading the view.
     }
     
