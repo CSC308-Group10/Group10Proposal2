@@ -29,7 +29,7 @@ class MemberViewController: UIViewController {
             memberText.text = "Notes:\n- Created main framework for application\n- Created AI game mode\n- Helped design UX/UI Views"
             break
         case "Alex":
-            memberText.text = "Notes:\n- First point here\n- Second point here\n- Third point here"
+            memberText.text = "Notes:\n- Helped brainstorm project ideas \n- Created Standard 2-player game mode \n- Helped design UI/UX Views"
             break
         default:
             break
