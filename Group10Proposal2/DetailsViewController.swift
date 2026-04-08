@@ -25,7 +25,7 @@ class DetailsViewController: UIViewController {
             detailText.text = "The game will allow for the players to customize different aspects about themselves in-game like: \n- Names: Allows the users to enter custom names to identify themselves with instead of just using Player 1 and Player 2 \n- Colors: Allows the users to select the color of their pieces through the use of a Drop Down Menu (Pull Down Button in Storyboard)"
             break
         case "Concepts to Use":
-            detailText.text = "This project will demonstrate concepts learned throughout class, including, but not limited to: \n- Segues: Action-Triggered, Manual, Programmatic \n- "
+            detailText.text = "This project will demonstrate concepts learned throughout class, including, but not limited to: \n- Segues: Action-Triggered, Manual, Programmatic \n- Auto Layout: Allows for proper functioning and looks on all devices \n- Loops: To run actions multiple times without repeating code \n- And others like arrays, animations, tuples, custom classes, and more."
             break
         default:
             break

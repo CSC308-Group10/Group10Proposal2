@@ -73,10 +73,10 @@
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Notes:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="S0l-UX-SSW">
-                                <rect key="frame" x="16" y="494" width="361" height="200"/>
+                                <rect key="frame" x="16" y="494" width="361" height="250"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="myb-zw-PR0"/>
+                                    <constraint firstAttribute="height" constant="250" id="myb-zw-PR0"/>
                                 </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -172,10 +172,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Detail Notes:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fne-v6-w7K">
-                                <rect key="frame" x="16" y="490" width="361" height="200"/>
+                                <rect key="frame" x="16" y="490" width="361" height="250"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="USl-Mf-FVk"/>
+                                    <constraint firstAttribute="height" constant="250" id="USl-Mf-FVk"/>
                                 </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -216,7 +216,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemMintColor">
-            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
